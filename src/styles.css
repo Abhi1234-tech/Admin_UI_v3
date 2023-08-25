@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-size: clamp(14px, 2vw, 20px);
+}
+
+* {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #ddd 1px;
+  border-radius: 5px;
+}
+
+.search-container input {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #5eca61;
+  text-align: left;
+}
+
+tr.selected {
+  background-color: #f0f0f0;
+}
+
+.pagination-container {
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex !important;
+}
+
+.pagination-buttons {
+  display: inline-flex;
+}
+
+.pagination-buttons button {
+  background-color: #5eca61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 5px;
+  border-radius: 50px;
+}
+
+.delete-selected-container {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (max-width: 736px) {
+  /* Decrease font size for smaller screens */
+  body {
+    font-size: clamp(10px, 2vw, 16px);
+  }
+
+  /* Adjust table layout for smaller screens */
+  table {
+    font-size: 12px;
+  }
+}
+button {
+  cursor: pointer;
+  background-color: #5eca61;
+  color: black;
+  border-radius: 5px;
+}
+.select-delete-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+.select-delete-buttons button {
+  background-color: #5eca61;
+  color: black;
+  border: black solid 2px;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
